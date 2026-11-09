@@ -1,0 +1,8 @@
+pickup_borough,trips,share_pct,fare_per_mile_usd,median_duration_min
+Manhattan,2435869,90.6,4.46,10.3
+Queens,195349,7.3,3.01,29.7
+Brooklyn,27655,1.0,3.68,22.2
+Unknown,22803,0.8,3.98,19.9
+Bronx,8100,0.3,3.58,25.1
+Staten Island,225,0.0,2.86,50.0
+EWR,26,0.0,4.49,29.8

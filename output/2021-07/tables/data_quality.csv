@@ -1,0 +1,8 @@
+rule,description,failed,failed_pct
+missing_timestamp,Pickup or drop-off time is missing,0,0.0
+outside_month,Pickup is outside 2021-07,130,0.0
+bad_duration,Trip lasts under 1 minute or over 3 hours (or ends before it starts),40878,1.45
+bad_distance,"Distance is zero, negative, missing or over 100 miles",37622,1.33
+bad_fare,"Fare is zero, negative (refunds and voids), missing or over $1,000",14525,0.51
+bad_passengers,Passenger count is 0 or more than 6 (missing counts are kept),66766,2.37
+implausible_speed,Average speed is over 80 mph,4916,0.17

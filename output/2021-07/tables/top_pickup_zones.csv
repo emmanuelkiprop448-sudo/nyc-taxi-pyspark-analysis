@@ -1,0 +1,16 @@
+borough,zone,trips,avg_fare_usd,avg_distance_mi
+Manhattan,Upper East Side South,122843,9.43,1.93
+Manhattan,Upper East Side North,105533,10.09,2.17
+Queens,JFK Airport,102853,45.8,15.93
+Manhattan,Penn Station/Madison Sq West,99205,11.67,2.5
+Manhattan,Midtown Center,95729,10.57,2.21
+Manhattan,Murray Hill,90691,10.87,2.35
+Manhattan,Midtown East,87387,10.62,2.31
+Manhattan,Lincoln Square East,82162,10.44,2.29
+Manhattan,Clinton East,77854,11.45,2.6
+Manhattan,Upper West Side South,76348,10.83,2.43
+Manhattan,Lenox Hill West,76057,10.19,2.27
+Manhattan,East Village,75975,11.68,2.73
+Manhattan,Union Sq,74288,10.58,2.22
+Manhattan,Midtown North,71172,10.93,2.35
+Manhattan,Gramercy,67508,10.83,2.39

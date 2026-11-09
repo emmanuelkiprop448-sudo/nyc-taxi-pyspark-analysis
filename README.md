@@ -1,5 +1,7 @@
 # NYC Taxi Trips: Data Quality and Demand Analysis with PySpark
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/emmanuelkiprop448-sudo/nyc-taxi-pyspark-analysis/blob/main/notebooks/run_in_colab.ipynb)
+
 A PySpark pipeline that takes one month of New York City yellow taxi trips (well over a million rows), checks every trip against data-quality rules, removes the trips that fail, and answers a set of business questions with Spark SQL. Each run produces CSV tables, charts and a written report.
 
 ## What it covers
@@ -11,6 +13,14 @@ A PySpark pipeline that takes one month of New York City yellow taxi trips (well
 - **Tests.** Unit tests for the data-quality rules using a small Spark DataFrame.
 
 ## Results
+
+Latest run: **July 2021**, 2.82 million raw trips. [Full report](output/2021-07/report.md)
+
+- 2,690,027 trips (95.3%) passed all seven data-quality rules; 131,488 were removed.
+- The busiest slot was Wednesday 18:00, averaging 7,381 trips per day; the quietest was Tuesday 03:00, with 180.
+- 72.6% of trips were paid by card, and the median card tip stayed between 25.6% and 27.7% of the fare across the day.
+
+![Average trips per day by weekday and hour, July 2021](output/2021-07/charts/demand_heatmap.png)
 
 Each run writes to `output/<month>/`:
 
@@ -41,7 +51,9 @@ Two details matter for the analysis:
 
 ## How to run
 
-You need Python 3.10 or later and Java 17 or 21 (Spark runs on Java).
+**In the browser:** open the notebook with the "Open in Colab" button above and run the cells. Google Colab installs everything, downloads the month you choose and shows the report. Nothing is needed on your computer.
+
+**On your computer:** you need Python 3.10 or later and Java 17 or 21 (Spark runs on Java).
 
 ```bash
 python -m venv .venv

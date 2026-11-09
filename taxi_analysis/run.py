@@ -57,6 +57,11 @@ def write_report(month: str, source: str, dq: dict, results: dict, out: Path, se
     dropped = dq["total"] - dq["kept"]
 
     dq_table = pd.DataFrame(dq["rules"])[["description", "failed", "failed_pct"]]
+    # A rule that caught a handful of trips should not read as "0%".
+    dq_table["failed_pct"] = [
+        "0" if failed == 0 else ("<0.01" if pct < 0.01 else f"{pct:.2f}")
+        for failed, pct in zip(dq_table["failed"], dq_table["failed_pct"])
+    ]
     dq_table.columns = ["Rule", "Trips caught", "% of raw trips"]
 
     lines = [

@@ -1,0 +1,4 @@
+airport,trips,avg_fare_usd,avg_total_usd,avg_distance_mi
+JFK Airport,121239,46.77,60.47,16.2
+LaGuardia Airport,86225,30.6,43.95,9.8
+Newark Airport,4890,69.19,97.38,17.2
