@@ -1,0 +1,10 @@
+# Raw data is downloaded by scripts/download_data.py and is too large for GitHub
+data/
+
+# Python and Spark working files
+.venv/
+__pycache__/
+.pytest_cache/
+spark-warehouse/
+metastore_db/
+derby.log
